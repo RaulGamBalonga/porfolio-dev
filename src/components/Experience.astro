@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: " Frontend - Airgo ",
+    description:
+      "Frontend Developer en una aplicación de uso interno con Server Side Rendering (SPA-SSR), proyecto en evolución. Responsabilidades incluyen la creación de componentes y diseño utilizando JavaScript, React, Tailwind CSS y Next.js., Azure",
+    
+  },
+  {
+    date: "Febrero 2023",
+    title: "Full-Stack - Cocampo  ",
+    description:
+    "contribuí al rediseño de páginas, componentes y estilos, así como al mantenimiento y adaptación de componentes. Además participé en la creación y mantenimiento de una librería de componentes y paquetes, así como elementos SEO. En el backend, colaboréen el mantenimiento y desarrollo evolutivo .",
+    tecnologies:"Tecnologías: JavaScript, React, TypeScript, Sass, Node.js, Next.js, Figma, Azure, DevOps, Git y metodología Agile"
+},
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
