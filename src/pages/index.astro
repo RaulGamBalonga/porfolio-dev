@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkIedIn.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -23,10 +24,21 @@ import Badge from "../components/Badge.astro";
         </a>
       </h1>
       <h2 class="text-white text-2xl opacity-80 text-wrap">
-        + 1 año de experiencia, desarrollador web. De Madrid, España 🌐 Me
-        especializo en Fronted con react
+        <span>+ 1 año de experiencia.</span>
+        <span class="text-yellow-200/90">desarrollador web.</span>
+        <span class="text-red-200/90">De Madrid, España 🌐</span>
+        <span class="opacity-85">Me especializo en Fronted con react</span>
       </h2>
-      <ul></ul>
+      <ul class="text-white">
+        <li>
+          <a href="https://www.linkedin.com/in/raul-gambalonga/">
+            <LinkedInIcon class="w-6 h-6" />
+          </a>
+        </li>
+        <li>Github</li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
   </main>
 </Layout>
