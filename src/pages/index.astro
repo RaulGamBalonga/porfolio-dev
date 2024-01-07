@@ -9,19 +9,22 @@ import MailIcon from "../components/icons/Mail.astro";
 import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
 import BriefCase from "../components/icons/BriefCase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Porfolio de Gambalongadev - Desarrollador fronted react con + de un año de experiencia."
 description="Contratame para aportar mis habilidades y actitud y seguir creciendo"
 >
-  <main> 
-    <SectionContainer class="py-44 pb-24">
+  <main class="px-4"> 
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="https://avatars.githubusercontent.com/u/88031305?v=4"
         alt="gambalongadev photo"
       />
-      <h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 pb-4">
+      <h1 class="text-white text-3xl md:text-4xl lg:text-2xl font-bold flex flex-row 
+      gap-x-4 pb-6 lg:pb-10">
         Hey, soy GambalongaDev<a
           href="https://www.linkedin.com/in/raul-gambalonga/"
           target="_blank"
@@ -31,34 +34,41 @@ description="Contratame para aportar mis habilidades y actitud y seguir creciend
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-white text-2xl opacity-80 text-wrap">
+      <h2 class="text-white text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
         <span>+ 1 año de experiencia.</span>
         <span class="text-yellow-200/90">desarrollador web.</span>
         <span class="text-red-200/90">De Madrid, España 🌐</span>
         <span class="opacity-85">Me especializo en Fronted con react</span>
       </h2>
 
-      <nav class="text-white flex gap-x-4 mt-8">
+      <nav class="text-white flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/raul-gambalonga/">
-          <LinkedInIcon class="size-6"  < SocialPill />
+          <LinkedInIcon class="size-4 md:size-6"  < SocialPill />
           linkedIn
         </SocialPill>
         <SocialPill href="https://github.com/RaulGamBalonga">
-          <GItHubIcon class="size-6"  < SocialPill />
+          <GItHubIcon class="size-4 md:size-6"  < SocialPill />
           GitHub
         </SocialPill>
-        <SocialPill href="https://github.com/RaulGamBalonga">
-          <MailIcon class="size-6"  < SocialPill />
+        <SocialPill href="mailto:gambalongadev@gmail.com">
+          <MailIcon class="size-4 md:size-6"  < SocialPill />
           gambalongadev@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer >
-      <h2 class="text-white text-2xl font-semibold mb-6 flex gap-x-2 items-center ">
+    <SectionContainer id="experiencia"  >
+      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-2 items-center ">
         <BriefCase class="size-7 text-white"/>
         Experiencia laboral.</h2>
           <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="Proyectos"  >
+      <h2 class="text-white text-3xl font-semibold mb-6 flex gap-x-2 items-center ">
+        <CodeIcon class="size-7 text-white"/>
+        Proyectos.</h2>
+          <Projects/>
     </SectionContainer>
   </main>
 </Layout>
